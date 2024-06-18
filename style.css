@@ -1,7 +1,58 @@
+:root{
+    --color-blue:#345FF6;
+    --color-gunmetal: #253347;
+    --color-dark-electric-blue: #5E6E85;
+    --color-white: #FFFFFF;
+
+}
+
+
 @font-face {
-    font-family: Inter;
-    src: url(./starter-code/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    font-family: 'Inter-Regular';
+    src: url('/assets/fonts/static/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('/assets/fonts/static/Inter-SemiBold.ttf');
 }
 body{
-    font-family: inter, sans-serif
+    font-family: "Inter-regular", sans-serif;
+    height: 100vh;
+}
+
+/* HEADER */
+
+header{
+    text-align: center;
+    background-image: linear-gradient(to bottom right, white, #e7f5fe, #d7e7fe);
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 2rem;
+}
+
+header > img {
+    margin: auto;
+    padding-top:  2rem;
+
+}
+
+h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 2rem 0;
+    font-weight: 700;
+}
+
+header >p {
+    font-weight: 200;
+    margin: 0 1rem 2rem 1rem;
+}
+
+
+h3{
+    font-family: 'Inter-SemiBold';
+}
+
+main > img {
+    width: auto;
 }
