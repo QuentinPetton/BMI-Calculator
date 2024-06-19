@@ -16,10 +16,21 @@
     font-family: 'Inter-SemiBold';
     src: url('/assets/fonts/static/Inter-SemiBold.ttf');
 }
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 body{
     font-family: "Inter-regular", sans-serif;
     height: 100vh;
 }
+
+
+
+
 
 /* HEADER */
 
