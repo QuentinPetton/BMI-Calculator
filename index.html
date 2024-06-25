@@ -28,24 +28,30 @@
 
       <form method="post">
         <h2>Enter your details below </h2>
-          <input type="radio" name="Measure" id="Metric" value="Metric">
+
+          <div class="container-metric">
+         
+          <input type="radio" name="Measure" id="Metric" value="Metric" checked="checked">
           <label for="Metric">Metric</label>
+
           <input type="radio" name="Measure" id="Imperial" value="Imperial">
           <label for="Imperial">Imperial</label>
+          </div>
         
-          <fieldset>
-            Heigh
+         
+           
+            <label for="Height" >Height</label>
             <input type="number" id="Height">
-            <label for="Height" >Height <span>cm</span></label>
-          </fieldset>
-          
-          <fieldset>
-             Weight
+            
+            <label for="Weight">Weight</label>
              <input type="number" id="Weight">
-             <label for="Weight">Weight <span>kg</span></label>
-          </fieldset>
+             
+        
+
           <div class="total">
-          <span>Your BMI is...</span> <!-- add score -->
+          <p>Your BMI is... </p> 
+          <span class="scoreBMI">Score</span>
+          <!-- add score -->
           <p> Your BMI suggests you're <!-- add classification -->. 
             Your ideal weight is between <!-- add range -->.
           </p>
@@ -137,5 +143,8 @@
 </section>
 
 </main>
+
+
+<script src="./app.js"></script>
 </body>
 </html>

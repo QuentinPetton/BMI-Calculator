@@ -30,28 +30,30 @@ body{
 
 
 
-
-
 /* HEADER */
 
 header{
     text-align: center;
     background-image: linear-gradient(to bottom right, white, #e7f5fe, #d7e7fe);
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 2rem 2rem;
     padding-bottom: 2rem;
 }
 
 header > img {
     margin: auto;
     padding-top:  2rem;
-
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
     line-height: 3rem;
     margin: 2rem 0;
     font-weight: 700;
+}
+
+h2{
+    margin: 1rem 2rem;
+    font-size: 1.7rem;
 }
 
 header >p {
@@ -66,4 +68,42 @@ h3{
 
 main > img {
     width: auto;
+}
+
+.formulaire {
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 2rem 2rem 2rem;
+    box-shadow: 10px 5px 5px black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.total {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-radius: 1rem ;
+    padding: 1.5rem;
+    margin: 2rem ;
+
+}
+.total > span{
+    font-size: 1rem;
+}
+.scoreBMI {
+    font-size: 2rem;
+
+}
+
+input{
+    width: 100%;
+    border-radius: 10px;
+
 }
