@@ -12,15 +12,12 @@ const app = {
     },
 
 bmiCalculator: function() {
-
    //On récupère la valeur de Height et Weight
     const userHeight = parseFloat(inputHeightElement.value);
     const userWeight = parseFloat(inputWeightElement.value);
-
     //condition que les deux inputs soient bien saisis avant de mofifier le texte du score
     if (userHeight > 0 & userWeight >0) {
-         // TODO faire Résultat BMI = weight / (height²)
-    //todo convertir height en mètre depuis cm
+    //convertir height en mètre depuis cm
     const bmiResult = userWeight / ((userHeight/100) * (userHeight/100));
 
 //TODO suivant résultat, envoyer message suivant résultat dans span score + P

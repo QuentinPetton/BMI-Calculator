@@ -53,7 +53,7 @@ h1{
 
 h2{
     margin: 1rem 2rem;
-    font-size: 1.7rem;
+    font-size: 1.1rem;
 }
 
 header >p {
@@ -63,11 +63,19 @@ header >p {
 
 
 h3{
-    font-family: 'Inter-SemiBold';
+    font-family: 'Inter-SemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+/* MAIN */
+main {
+    margin: 0 1.5rem;
 }
 
 main > img {
     width: auto;
+
 }
 
 .formulaire {
@@ -75,8 +83,7 @@ main > img {
     display: flex;
     justify-content: center;
     border-radius: 20px;
-    margin: 0 2rem 2rem 2rem;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 2px 4px 3px black;
 }
 
 form {
@@ -85,6 +92,9 @@ form {
     align-items: center;
 }
 
+.total > p{
+    color: var(--color-white);
+}
 
 .total {
     background-color: var(--color-blue);
@@ -108,3 +118,28 @@ input{
 }
 
 
+section.main {
+    margin-top: 4rem;
+}
+
+p {
+    color: var(--color-dark-electric-blue);
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+
+article >img {
+    margin: 1.2rem 0;
+}
+
+.limitations{
+    text-align: center;
+}
+
+.limitations-of-bmi >article >div{
+display: flex;
+gap: 1rem;
+align-items: center;
+
+}
