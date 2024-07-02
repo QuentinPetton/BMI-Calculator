@@ -26,6 +26,7 @@ input::-webkit-inner-spin-button {
 body{
     font-family: "Inter-regular", sans-serif;
     height: 100vh;
+    color: var(--color-gunmetal);
 
 }
 
@@ -73,8 +74,9 @@ h1{
 }
 
 h2{
-    margin: 1rem 2rem;
-    font-size: 1.1rem;
+    margin: 1rem 0rem;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 header >p {
@@ -85,12 +87,17 @@ header >p {
 
 h3{
     font-family: 'Inter-SemiBold', sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin: 2rem 0;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-top: 2rem;
     padding: 0rem 2rem;
+    
 }
 /* MAIN */
+
+main{
+    padding-bottom: 5rem;
+}
 
 main > img {
     width: auto;
@@ -116,7 +123,7 @@ main > img {
     justify-content: center;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 form {
@@ -127,9 +134,15 @@ form {
     
 }
 
+.container-metric{
+    margin-bottom: 2rem;
+}
+
 .container-metric label {
     
     margin-right: 2rem;
+    
+    
 }
 
 
@@ -142,10 +155,14 @@ form {
 
 .height-form > input {
     width: 100%;
+    padding: 0.8rem;
+    margin: 1rem 0;
 
 }
 .weight-form > input {
     width: 100%;
+    padding: 0.8rem;
+    margin: 1rem 0;
 }
 
 
@@ -214,5 +231,5 @@ align-items: center;
 .limitations-of-bmi > p {
     text-align: center;
    
-    padding: 2rem;
+    padding: 0rem 2rem;
 }
