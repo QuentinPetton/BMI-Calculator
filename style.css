@@ -46,22 +46,13 @@ body :before {
 
 }
 
-
-
-/* HEADER */
-
-header{
-
-
-    
+.hero{
     text-align: center;
-    
     border-radius: 0 0 2rem 2rem;
     padding-bottom: 2rem;
-
 }
 
-header > img {
+.hero > img {
     margin: auto;
     padding-top:  2rem;
 }
@@ -75,11 +66,12 @@ h1{
 
 h2{
     margin: 1rem 0rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
+   
 }
 
-header >p {
+.hero >p {
     font-weight: 200;
     margin: 0 1rem 2rem 1rem;
 }
@@ -89,9 +81,7 @@ h3{
     font-family: 'Inter-SemiBold', sans-serif;
     font-weight: 700;
     font-size: 1.6rem;
-    margin-top: 2rem;
-    
-    
+    margin-top: 2rem;  
 }
 /* MAIN */
 
@@ -99,10 +89,7 @@ main{
     padding-bottom: 5rem;
 }
 
-main > img {
-    width: auto;
 
-}
 
 .main > p {
     padding: 0rem 2rem;
@@ -127,7 +114,7 @@ main > img {
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+ 
     padding: 1rem 2rem;
 }
 
@@ -173,7 +160,6 @@ form {
     color: var(--color-white);
     border-radius: 1rem ;
     padding: 1.5rem;
-    margin: 2rem ;
     width: 100%;
 }
 .total > span{
@@ -301,3 +287,71 @@ body :before {
 }
 
 }
+
+
+    /*DESKTOP*/
+    @media screen and (min-width: 1440px){
+
+    .container-hero-form{
+        display: flex;
+        margin-bottom: 10rem;
+      
+    
+    }
+    body :before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 62%;
+        background-image: linear-gradient(to bottom right, white, #e7f5fe, #d7e7fe);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-bottom-left-radius: 0px; /* Ajustez la valeur selon vos besoins */
+        border-bottom-right-radius: 50px; /* Ajustez la valeur selon vos besoins */
+        z-index: -1; /* Pour s'assurer que le pseudo-élément est derrière le contenu */
+    
+    }
+
+    .hero {
+        text-align: left;
+        width: 50%;
+        margin: 0 7rem;
+    
+        
+    }
+
+    .hero > h1, .hero >p {
+        margin-left: 0;
+    }
+    h1{
+    font-size: 4rem;
+    margin-top:  8rem;
+    line-height: 4rem;
+    }
+
+    .hero > img {
+        display: inline;
+    }
+
+    .formulaire{
+        margin-top: 8rem;
+        margin-right: 7rem;
+    }
+
+    .main{
+        margin: 0rem 5rem;
+    }
+    .container-bmi-meaning-text > h3 {
+        font-size: 3rem;
+    }
+    
+    .container-bmi-meaning-article {
+        display: flex;
+        
+    }
+
+
+
+    }
