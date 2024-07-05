@@ -3,9 +3,7 @@
     --color-gunmetal: #253347;
     --color-dark-electric-blue: #5E6E85;
     --color-white: #FFFFFF;
-
 }
-
 
 @font-face {
     font-family: 'Inter-Regular';
@@ -27,7 +25,6 @@ body{
     font-family: "Inter-regular", sans-serif;
     height: 100vh;
     color: var(--color-gunmetal);
-
 }
 
 body :before {
@@ -40,11 +37,14 @@ body :before {
     background-image: linear-gradient(to bottom right, white, #e7f5fe, #d7e7fe);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    border-bottom-left-radius: 50px; /* Ajustez la valeur selon vos besoins */
-    border-bottom-right-radius: 50px; /* Ajustez la valeur selon vos besoins */
+    border-bottom-left-radius: 50px; 
+    border-bottom-right-radius: 50px; 
     z-index: -1; /* Pour s'assurer que le pseudo-élément est derrière le contenu */
-
 }
+
+
+.curved-line-left {
+    display: none;}
 
 .hero{
     text-align: center;
@@ -68,14 +68,12 @@ h2{
     margin: 1rem 0rem;
     font-size: 1.5rem;
     font-weight: 600;
-   
 }
 
 .hero >p {
     font-weight: 200;
     margin: 0 1rem 2rem 1rem;
 }
-
 
 h3{
     font-family: 'Inter-SemiBold', sans-serif;
@@ -89,18 +87,14 @@ main{
     padding-bottom: 5rem;
 }
 
-
-
 .main > p {
     padding: 0rem 2rem;
 }
-
 
 .main > article{
     background-image: linear-gradient(to right, hsl(184, 95%, 92%, 0%), hsl(216, 95%, 92%, 25%));
     padding: 0rem 2rem; 
 }
-
 
 .formulaire {
     background-color: var(--color-white);
@@ -126,7 +120,6 @@ form {
     margin-right: 2rem; 
 }
 
-
 .height-form , .weight-form{
     display: flex;
     flex-direction: column;
@@ -148,8 +141,6 @@ form {
     flex-direction: column;
     width: 100%;
 }
-
-
 
 .total > p{
     color: var(--color-white);
@@ -258,14 +249,14 @@ body :before {
 .main article {
   display: flex;
   gap: 3rem;
+  margin: 0 3rem;
 }
 
 .limitations-of-bmi{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin:  3rem;
-    gap: 1rem;
-   
+    gap: 1rem; 
 }
 .limitations-of-bmi > h3 {
     grid-column: 1/5;
@@ -294,36 +285,22 @@ body :before {
     .container-hero-form{
         display: flex;
         margin-bottom: 10rem;
-      
-    
     }
     body :before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 70%;
         height: 62%;
-        background-image: linear-gradient(to bottom right, white, #e7f5fe, #d7e7fe);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        border-bottom-left-radius: 0px; /* Ajustez la valeur selon vos besoins */
-        border-bottom-right-radius: 50px; /* Ajustez la valeur selon vos besoins */
-        z-index: -1; /* Pour s'assurer que le pseudo-élément est derrière le contenu */
-    
     }
 
     .hero {
         text-align: left;
         width: 50%;
-        margin: 0 7rem;
-    
-        
+        margin: 0 7rem; 
     }
 
     .hero > h1, .hero >p {
         margin-left: 0;
     }
+
     h1{
     font-size: 4rem;
     margin-top:  8rem;
@@ -340,8 +317,7 @@ body :before {
     }
 
     .main{
-        margin: 0rem 5rem;
-       
+        margin: 0rem 7rem;
     }
 
     .img-meaning{
@@ -350,36 +326,28 @@ body :before {
 
     .container-bmi-meaning-text{
         width: 50%;
-       
     }
 
     .container-bmi-meaning-text > h3 {
         font-size: 3rem;
-       
     }
     
     .container-bmi-meaning-article {
-       display: flex;
+        display: flex;
         margin-top: 8rem;
-      
-        
+        justify-content: space-between;  
     }
 
     .container-bmi-meaning-article > article {
         display: block;
-        width: 25%;
-  
-        
-   
+        width: 30%;
     }
     
-
     .limitations-of-bmi{
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         margin-left: 7rem;
-        gap: 2.5rem;
-       
+        gap: 2.rem;
     }
     
     .limitations-of-bmi > h3 {
@@ -390,8 +358,9 @@ body :before {
     .limitations-of-bmi > p{
         grid-column: 1/4;
         text-align: left;
-        margin-right: 3rem;
-        padding: 0;
+        margin-right: 7rem;
+        margin-top: 0;
+        padding: 1rem 0;
     }
     .limitations-of-bmi > article{
         grid-column: span 2;
@@ -404,7 +373,6 @@ body :before {
     .limitations-of-bmi >article:nth-last-child(4) {
         grid-column: 3/5;
     }
-    
 
     .limitations-of-bmi >article:nth-last-child(3) {
         grid-column: 5/7;
@@ -418,8 +386,13 @@ body :before {
         grid-column: 4/6;
     }
     
-  
     
+    .curved-line-left {
+        display: block;
+        position: absolute; 
+        top: 40rem  ;   
+        left: 85rem;        
+        
 
 
 
