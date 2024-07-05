@@ -38,7 +38,7 @@
           <label for="Imperial">Imperial</label>
           </div>
         
-         
+          <div class="container-height-weight">
            <div class="height-form">
             <label for="Height" >Height</label>
             <input type="number" id="Height" placeholder="0">
@@ -48,24 +48,23 @@
             <label for="Weight">Weight</label>
              <input type="number" id="Weight" placeholder="0">
             </div>  
-        
+          </div>
 
           <div class="total">
-          <p>Your BMI is... </p> 
-          <span class="scoreBMI">Score</span>
+          <!-- <p>Your BMI is... </p>  -->
+          <span class="scoreBMI">Welcome !</span>
           <!-- add score -->
-          <p> Your BMI suggests you're <!-- add classification -->. 
-            Your ideal weight is between <!-- add range -->.
-          </p>
+          <p> Enter your height and weight and you'll see your BMI resulmt here.</p>
         </div>
       </form>
   
   </section>
 
   <section class="main">
+    <div class="container-bmi-meaning">
+  <img class="img-meaning" src="./starter-code/assets/images/image-man-eating.webp" alt="A man eating a sushi">
 
-  <img src="./starter-code/assets/images/image-man-eating.webp" alt="A man eating a sushi">
-
+  <div class = container-bmi-meaning-text>
 <h3>What your BMI result means</h3>
   
 <p>A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a 
@@ -74,28 +73,36 @@
   fat and sugar content, incorporating ample fruits and vegetables. Additionally, 
   strive for regular physical activity, ideally about 30 minutes daily for 
   five days a week.</p>
-  
+  </div>
+</div>
+
   <article>
 <img src="./starter-code/assets/images/icon-eating.svg" alt="eating icon">
+
+    <div>
   <h4>Healthy eating</h4>
   <p>Healthy eating promotes weight control, disease prevention, better digestion, 
   immunity, mental clarity, and mood.</p>
+  </div>
   </article>
 
   <article>
 <img src="./starter-code/assets/images/icon-exercise.svg" alt="exercise icon">
+<div>
 <h4>Regular exercise</h4>
 <p> Exercise improves fitness, aids weight control, elevates mood, and reduces disease 
   risk, fostering wellness and longevity.</p>
+  </div>
   </article>
   
  
 <article>
   <img src="./starter-code/assets/images/icon-sleep.svg" alt="sleep icon">
+  <div>
 <h4>Adequate sleep</h4>
 <p>Sleep enhances mental clarity, emotional stability, and physical wellness, promoting 
   overall restoration and rejuvenation.</p>
-
+</div>
 </article>
   </section>
 
@@ -112,6 +119,8 @@
     </div>
   <p>The development and body fat composition of girls and boys vary with age. Consequently, 
   a child's age and gender are considered when evaluating their BMI.</p>
+
+  
 </article>
   
 <article>
@@ -160,3 +169,4 @@
 <script src="./app.js"></script>
 </body>
 </html>
+

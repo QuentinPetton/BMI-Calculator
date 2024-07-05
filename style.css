@@ -30,7 +30,7 @@ body{
 
 }
 
-body ::before {
+body :before {
     content: '';
     position: absolute;
     top: 0;
@@ -90,7 +90,7 @@ h3{
     font-weight: 700;
     font-size: 1.6rem;
     margin-top: 2rem;
-    padding: 0rem 2rem;
+    
     
 }
 /* MAIN */
@@ -156,6 +156,11 @@ form {
     padding: 0.8rem;
     margin: 1rem 0;
 }
+.container-height-weight {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
 
 
@@ -172,16 +177,17 @@ form {
     width: 100%;
 }
 .total > span{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
-.scoreBMI {
-    font-size: 2rem;
-}
+
 
 input{
     border-radius: 10px;  
 }
 
+.container-bmi-meaning-text{
+    margin: 0 3rem;
+}
 
 section.main {
     margin-top: 4rem;
@@ -231,14 +237,49 @@ align-items: center;
 
 
 .formulaire{
-    margin-left: 0;
-    margin-right: 0rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     display: block;
+    
     }
   
 
 .total {
     border-radius: 1rem 7rem 7rem 1rem ;
+}
+
+.container-height-weight{
+    flex-direction: row;
+    gap: 3rem;
+}
+
+body :before {
+    height: 60%;
+}
+
+.img-meaning{
+    width: 50%;
+
+}
+
+.container-bmi-meaning{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    
+}
+ h3 {
+    padding: 0;
+}
+
+
+
+.main article {
+
+  display: flex;
+  gap: 3rem;
 }
 
 }

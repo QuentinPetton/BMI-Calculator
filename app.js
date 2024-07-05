@@ -22,10 +22,11 @@ bmiCalculator: function() {
 
 //TODO suivant résultat, envoyer message suivant résultat dans span score + P
 const scoreBmiElement = document.querySelector(".scoreBMI");
-scoreBmiElement.innerHTML = bmiResult;
+scoreBmiElement.innerHTML =("Your BMIS is ... <br/> " + bmiResult );
     }
 
 },
 }
 
 document.addEventListener('DOMContentLoaded', app.init);
+
