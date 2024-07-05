@@ -44,7 +44,12 @@ body :before {
 
 
 .curved-line-left {
-    display: none;}
+    display: none;
+}
+
+.curved-line-right{
+    display: none;
+}
 
 .hero{
     text-align: center;
@@ -386,13 +391,19 @@ body :before {
         grid-column: 4/6;
     }
     
-    
     .curved-line-left {
         display: block;
         position: absolute; 
-        top: 40rem  ;   
-        left: 85rem;        
-        
+        top: 40rem ;   
+        left: 85rem;
+    }     
+    
+    .curved-line-right{
+        display: block;
+        position: absolute; 
+        top: 120rem ;   
+        left: 15rem;
+    }
 
 
 
