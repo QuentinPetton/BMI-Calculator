@@ -394,14 +394,14 @@ body :before {
     .curved-line-left {
         display: block;
         position: absolute; 
-        top: 40rem ;   
-        left: 85rem;
+        top: 42rem ;   
+        left: 80rem;
     }     
     
     .curved-line-right{
         display: block;
         position: absolute; 
-        top: 120rem ;   
+        top: 120em ;   
         left: 15rem;
     }
 
