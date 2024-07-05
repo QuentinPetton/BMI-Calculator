@@ -247,7 +247,6 @@ body :before {
 .container-bmi-meaning{
     display: flex;
     align-items: center;
-    gap: 3rem;
     margin-right: 3rem;
     margin-bottom: 3rem;   
 }
@@ -342,14 +341,36 @@ body :before {
 
     .main{
         margin: 0rem 5rem;
+       
     }
+
+    .img-meaning{
+        width: 40%;
+    }
+
+    .container-bmi-meaning-text{
+        width: 50%;
+        margin: auto;
+    }
+
     .container-bmi-meaning-text > h3 {
         font-size: 3rem;
+       
     }
     
     .container-bmi-meaning-article {
-        display: flex;
+       display: flex;
+        margin-top: 8rem;
+      
         
+    }
+
+    .container-bmi-meaning-article > article {
+        display: block;
+        width: 25%;
+        margin: auto;
+        
+   
     }
 
 
