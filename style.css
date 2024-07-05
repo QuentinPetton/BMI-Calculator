@@ -240,10 +240,7 @@ align-items: center;
     margin-left: 3rem;
     margin-right: 3rem;
     display: block;
-    
     }
-  
-
 .total {
     border-radius: 1rem 7rem 7rem 1rem ;
 }
@@ -259,7 +256,6 @@ body :before {
 
 .img-meaning{
     width: 50%;
-
 }
 
 .container-bmi-meaning{
@@ -267,19 +263,41 @@ body :before {
     align-items: center;
     gap: 3rem;
     margin-right: 3rem;
-    margin-bottom: 3rem;
-    
+    margin-bottom: 3rem;   
 }
+
  h3 {
     padding: 0;
 }
 
-
-
 .main article {
-
   display: flex;
   gap: 3rem;
+}
+
+.limitations-of-bmi{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin:  3rem;
+    gap: 1rem;
+   
+}
+.limitations-of-bmi > h3 {
+    grid-column: 1/5;
+}
+.limitations-of-bmi > p{
+    grid-column: 1/5;
+}
+.limitations-of-bmi > article{
+    grid-column: span 2;
+}
+
+.limitations-of-bmi >article:nth-last-child(1) {
+    grid-column: 2/4;
+}
+
+.limitations-of-bmi > article {
+    margin: 0;
 }
 
 }
