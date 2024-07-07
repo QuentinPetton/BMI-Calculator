@@ -5,15 +5,6 @@
     --color-white: #FFFFFF;
 }
 
-@font-face {
-    font-family: 'Inter-Regular';
-    src: url('/assets/fonts/static/Inter-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Inter-SemiBold';
-    src: url('/assets/fonts/static/Inter-SemiBold.ttf');
-}
 
 
 input::-webkit-outer-spin-button,
@@ -22,7 +13,7 @@ input::-webkit-inner-spin-button {
 }
 
 body{
-    font-family: "Inter-regular", sans-serif;
+    font-family: "Inter", sans-serif;
     height: 100vh;
     color: var(--color-gunmetal);
 }
@@ -85,9 +76,9 @@ h2{
 }
 
 h3{
-    font-family: 'Inter-SemiBold', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-top: 2rem;  
 }
 /* MAIN */
@@ -364,7 +355,7 @@ body :before {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         margin-left: 7rem;
-        gap: 2.rem;
+        gap: 2rem;
     }
     
     .limitations-of-bmi > h3 {
