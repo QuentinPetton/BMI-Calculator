@@ -26,8 +26,11 @@ bmiCalculator: function() {
 //TODO suivant résultat, envoyer message suivant résultat dans span score + P
 const scoreBmiElement = document.querySelector(".scoreBMI");
 scoreBmiElement.innerHTML =("Your BMIS is ... <br/> " + bmiResult );
+    }  else {
+        // Si l'un des champs est vide ou non valide, réinitialiser le texte
+        const scoreBmiElement = document.querySelector(".scoreBMI");
+        scoreBmiElement.innerHTML = "Enter your Height and Weight";
     }
-
 },
 }
 
