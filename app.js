@@ -18,7 +18,10 @@ bmiCalculator: function() {
     //condition que les deux inputs soient bien saisis avant de mofifier le texte du score
     if (userHeight > 0 & userWeight >0) {
     //convertir height en mètre depuis cm
-    const bmiResult = userWeight / ((userHeight/100) * (userHeight/100));
+    const convertedBmiResult = userWeight / ((userHeight/100) * (userHeight/100));
+
+    //arrondir le BMI à un chiffre après la virgule
+    const bmiResult = Math.round(convertedBmiResult * 10) / 10;
 
 //TODO suivant résultat, envoyer message suivant résultat dans span score + P
 const scoreBmiElement = document.querySelector(".scoreBMI");
