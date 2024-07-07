@@ -12,6 +12,9 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+
+
+
 body{
     font-family: "Inter", sans-serif;
     height: 100vh;
@@ -292,7 +295,7 @@ body :before {
     }
     body :before {
         width: 70%;
-        height: 68%;
+        height: 65%;
     }
 
     .hero {
