@@ -7,6 +7,7 @@
        const suggestElement = document.querySelector("#Suggest");
        // TODO récupérer paragraphe meaning section
        const resultMeaning = document.querySelector("#resultMeaning");
+       
 
 const app = {
     init: function(){
