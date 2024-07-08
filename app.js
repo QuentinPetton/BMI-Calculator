@@ -61,3 +61,6 @@ bmiCalculator: function() {
 
 document.addEventListener('DOMContentLoaded', app.init);
 
+
+
+//todo calculer poids ideal (weight) suivant le bmi result (range en kg);
