@@ -13,7 +13,7 @@ input::-webkit-inner-spin-button {
 }
 
 
-
+ 
 
 body{
     font-family: "Inter", sans-serif;
@@ -43,6 +43,10 @@ body :before {
 
 .curved-line-right{
     display: none;
+}
+
+.hero > p {
+color: var(--color-gunmetal);
 }
 
 p{
