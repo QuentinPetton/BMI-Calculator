@@ -116,12 +116,19 @@ main{
 form {
     display: flex;
     flex-direction: column;
- 
     padding: 1rem 2rem;
 }
 
 .container-metric{
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.container-metric > div {
+    width: 100%;
 }
 
 .container-metric label {  
@@ -187,8 +194,9 @@ form {
     background-color: var(--color-blue);
     color: var(--color-white);
     border-radius: 1rem ;
-    padding: 1.5rem;
+    padding: 2rem;
     width: 100%;
+    margin-bottom: 1.5rem;
 }
 .total > span{
     font-size: 1.5rem;
