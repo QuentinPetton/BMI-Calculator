@@ -40,10 +40,6 @@ input::-webkit-inner-spin-button {
  
 }
 
-
-
- 
-
 body{
     font-family: "Inter", sans-serif;
     height: 100vh;
@@ -100,8 +96,8 @@ h1{
 }
 
 h2{
-    margin: 1rem 0rem;
-    font-size: 1.5rem;
+    margin: 1rem 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -143,14 +139,13 @@ main{
 form {
     display: flex;
     flex-direction: column;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem;  
 }
 
 .container-metric{
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
-    
     gap: 3rem;
     width: 100%;
 }
@@ -177,6 +172,7 @@ form {
     margin: 1rem 0;
 }
 
+
 .weight-form > input {
     width: 100%;
     padding: 0.8rem;
@@ -191,6 +187,30 @@ form {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+.weight-input-two {
+    position: absolute;
+  right: 1rem;
+  bottom: 7rem;
+  color: var(--color-blue);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.height-input-two {
+    position: absolute;
+    right: 1rem;
+    bottom: 7rem;
+    color: var(--color-blue);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#HeightTwo, #WeightTwo, .weight-input-two, .height-input-two {
+    display: none;
+}
+
+
 
 .weight-form {
     position: relative;

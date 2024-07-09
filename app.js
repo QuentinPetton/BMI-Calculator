@@ -7,13 +7,47 @@
        const suggestElement = document.querySelector("#Suggest");
        // TODO récupérer paragraphe meaning section
        const resultMeaning = document.querySelector("#resultMeaning");
+       //TODO récupérer input pour imperial
+       const weightInputTwoElement = document.querySelector(".weight-input-two");
+       const heightInputTwoElement = document.querySelector(".height-input-two");
+       const heightTwoElement = document.querySelector("#HeightTwo");
+       const weightTwoElement =document.querySelector ("#WeightTwo");
+
+       //todo récupérer radio button pour choix Metric/Imperial
+       const radioButtonMetricElement = document.querySelector("#Metric");
+       const radioButtonImperialElement = document.querySelector ("#Imperial");
        
+
+
 
 const app = {
     init: function(){
        //ajout écouteurs d'événements sur les input
        inputHeightElement.addEventListener('input', app.bmiCalculator);
        inputWeightElement.addEventListener('input', app.bmiCalculator);
+
+       //ajout ecouteurs d'événement sur radio button
+        radioButtonMetricElement.addEventListener ('click', app.DisplayMeasureElement );
+        radioButtonImperialElement.addEventListener ('click', app.DisplayMeasureElement);
+
+    },
+
+    DisplayMeasureElement: function () {
+        if (radioButtonImperialElement.checked) {
+         
+            weightInputTwoElement.style.display = "block";
+            heightInputTwoElement.style.display = "block";
+            heightTwoElement.style.display = "block";
+            weightTwoElement.style.display = "block";
+        } else {
+            weightInputTwoElement.style.display = "";
+            heightInputTwoElement.style.display = "";
+            heightTwoElement.style.display = "";
+            weightTwoElement.style.display = "";
+            
+        }
+
+
     },
 
 bmiCalculator: function() {
